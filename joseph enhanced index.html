@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAMIT Systems & Engineering</title>
+  <meta name="description" content="NAMIT Systems & Engineering — Innovative IT, Embedded Systems & Industrial Automation solutions.">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#0ea5a0;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071029 0%, #071428 60%);}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:56px;height:56px;border-radius:10px;object-fit:cover;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .brand h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+
+    nav a{margin-left:18px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .hero h2{margin:0 0 12px 0;font-size:28px}
+    .hero p{margin:0 0 18px;color:var(--muted);line-height:1.6}
+    .cta{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;background:var(--accent);color:#042027;border-radius:10px;font-weight:700}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .feature{background:var(--card);padding:18px;border-radius:12px}
+    .feature h3{margin:0 0 8px;font-size:16px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+
+    .services{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .service{background:var(--glass);padding:18px;border-radius:12px}
+    .service h4{margin:0 0 8px}
+
+    footer{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .services{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      .features{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      nav{margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f3f6c1c6a77dfd8f5f5d3b6cd9b9c3b" alt="NAMIT logo">
+        <div class="brand">
+          <h1>NAMIT Systems &amp; Engineering</h1>
+          <p>Embedded • Automation • Software • IoT</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Engineering the future of connected systems</h2>
+        <p>At NAMIT Systems &amp; Engineering we design robust embedded platforms, industrial automation solutions and full-stack software to turn ideas into reliable products. From proof-of-concept to production-ready systems — we build with performance, security and maintainability in mind.</p>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="cta" href="#contact">Get a Quote</a>
+          <a href="#projects" style="color:var(--muted);font-weight:600">View Projects →</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px">
+          <div style="flex:1;background:transparent;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
+            <strong>Industries</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Manufacturing · Energy · Agriculture · Healthcare</div>
+          </div>
+          <div style="width:130px;background:transparent;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);text-align:center">
+            <div style="font-weight:700;font-size:18px">10+</div>
+            <div style="color:var(--muted);font-size:13px">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div style="border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,0.6)">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=e2c3f9d06e7e3b89a2e1f6c3f9c2fb2f" alt="industrial automation" style="width:100%;height:100%;display:block;object-fit:cover">
+        </div>
+      </aside>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Embedded Systems</h3>
+        <p>Custom firmware, real-time OS integration, low-power design, and hardware bring-up for microcontroller and SoC platforms.</p>
+      </div>
+      <div class="feature">
+        <h3>Industrial Automation</h3>
+        <p>PLC/SCADA integration, control loops, sensor networks and HMI for reliable factory and process automation.</p>
+      </div>
+      <div class="feature">
+        <h3>Cloud &amp; IoT</h3>
+        <p>Secure device connectivity, telemetry pipelines, cloud functions, dashboards and over-the-air updates.</p>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:30px">
+      <h2 style="font-size:20px;margin-bottom:12px">Selected Projects</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1581091870622-3c3f1c4a1b3f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f4c2c3e4d5a6b7c8d9e0f1a2b3c4d5e" alt="project 1">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p" alt="project 2">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e" alt="project 3">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r" alt="project 4">
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="service">
+        <h4>Product Development</h4>
+        <p>Concept &amp; requirements, hardware selection, prototype boards, iterative firmware and industrial-grade validation.</p>
+      </div>
+      <div class="service">
+        <h4>Consulting &amp; Support</h4>
+        <p>Architecture reviews, security audits, maintainability plans, and long-term support contracts for mission-critical deployments.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px;display:flex;gap:20px;align-items:flex-start">
+      <div style="flex:1;background:var(--card);padding:18px;border-radius:12px">
+        <h3>Contact Us</h3>
+        <p style="color:var(--muted)">Reach out for collaboration, quotes or technical inquiries.</p>
+        <ul style="list-style:none;padding:0;margin-top:10px;color:var(--muted);line-height:1.8">
+          <li><strong>Email:</strong> info@namit-systems.example</li>
+          <li><strong>Phone:</strong> +254 700 000 000</li>
+          <li><strong>Location:</strong> Nairobi, Kenya</li>
+        </ul>
+      </div>
+
+      <div style="width:360px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:12px">
+        <h4 style="margin-top:0">Quick Inquiry</h4>
+        <form onsubmit="alert('Form submitted — replace with real endpoint in production');return false;">
+          <div style="margin-bottom:10px"><label style="display:block;margin-bottom:6px;color:var(--muted)">Name</label><input required placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></div>
+          <div style="margin-bottom:10px"><label style="display:block;margin-bottom:6px;color:var(--muted)">Email</label><input required type="email" placeholder="you@example.com" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></div>
+          <div style="margin-bottom:10px"><label style="display:block;margin-bottom:6px;color:var(--muted)">Message</label><textarea required placeholder="Short message" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;height:90px"></textarea></div>
+          <button type="submit" style="padding:10px 14px;border-radius:8px;border:none;background:var(--accent);font-weight:700">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> NAMIT Systems &amp; Engineering</div>
+      <div>Built with care • <a href="#contact">Get in touch</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
